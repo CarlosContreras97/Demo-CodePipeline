@@ -1,0 +1,17 @@
+{
+  "version": 0.0,
+  "Resources": [
+    {
+      "TargetService": {
+        "Type": "AWS::ECS::Service",
+        "Properties": {
+          "TaskDefinition": "arn:aws:ecs:us-east-1:905032135767:task-definition/tutorial-task-def:4",
+          "LoadBalancerInfo": {
+            "ContainerName": "sample-app",
+            "ContainerPort": 80
+          }
+        }
+      }
+    }
+  ]
+}
